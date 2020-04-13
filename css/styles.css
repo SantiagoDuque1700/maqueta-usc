@@ -94,7 +94,6 @@ ol,ul{
 }
 
 .hero{
-    padding-top: 15px;
     height: 300px;
     background-color: #1b2127;
     display: flex;
@@ -236,7 +235,33 @@ article{
         font-size: 30px;
     }
 
-.footer {
+    .nosotros{
+        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-bottom: 25px;
+    }
+
+    .clase{
+        padding-left: 0px;
+    }
+
+    .carousel__container:hover .carousel-item {
+        opacity: 0.3;
+    }
+
+    .carousel__container:hover .carousel-item:hover {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        opacity: 1;
+    }
+
+    .carousel-item:hover ~ .carousel-item {
+        -webkit-transform: translate3d(0px, 0, 0);
+                transform: translate3d(0px, 0, 0);
+    }
+
+    .footer {
         align-items: flex-start;
         flex-direction: column;
     }
